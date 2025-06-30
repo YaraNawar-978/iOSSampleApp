@@ -21,3 +21,9 @@ jobs:
           fastlane dev_build
         env:
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dev-build
+          path: output/
