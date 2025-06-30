@@ -1,9 +1,11 @@
 default_platform(:ios)
 
 platform :ios do
-  lane :build_and_upload do
-    match(type: "appstore") # You can also use "development" to test
-    gym(scheme: "iOSSampleApp")
-    deliver(force: true, skip_screenshots: true)
+  lane :dev_build do
+    match(type: "development")
+    gym(
+      scheme: "iOSSampleApp",
+      export_method: "development"
+    )
   end
 end
