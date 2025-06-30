@@ -1,5 +1,3 @@
-default_platform(:ios)
-
 platform :ios do
   lane :dev_build do
     match(type: "development")
@@ -7,5 +5,6 @@ platform :ios do
       scheme: "iOSSampleApp",
       export_method: "development"
     )
+    sh("mkdir -p output && mv *.ipa output/")
   end
 end
