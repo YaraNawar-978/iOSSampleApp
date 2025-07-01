@@ -1,0 +1,10 @@
+platform :ios do
+  desc "Build a development version of the app"
+  lane :dev_build do
+    build_app(
+      scheme: "iOSSampleApp",
+      export_method: "development",
+      output_directory: "output"
+    )
+  end
+end
