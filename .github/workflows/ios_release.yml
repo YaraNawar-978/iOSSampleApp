@@ -11,24 +11,18 @@ jobs:
       - name: ⬇️ Checkout code
         uses: actions/checkout@v3
 
-      - name: 🧱 Set up Ruby
+      - name: 🧱 Set up Ruby and Fastlane
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
 
-      - name: 📦 Install Bundler and Fastlane system-wide
-        run: |
-          gem install bundler fastlane
-
-      - name: 🧩 Install Fastlane dependencies from Gemfile
-        run: |
-          cd Sources/iOSSampleApp
-          bundle install
+      - name: 📦 Install Fastlane
+        run: gem install fastlane
 
       - name: 🚀 Run Fastlane dev_build
         run: |
           cd Sources/iOSSampleApp
-          bundle exec fastlane dev_build
+          fastlane dev_build
         env:
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
 
