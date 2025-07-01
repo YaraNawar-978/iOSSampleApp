@@ -12,6 +12,17 @@ opt_out_usage
 
 default_platform(:ios)
 
+ desc "Build and export a development .ipa"
+  lane :dev_build do
+    match(type: "development") # Make sure match is configured properly
+    gym(
+      project: "Sources/iOSSampleApp.xcodeproj",
+      scheme: "iOSSampleApp",
+      export_method: "development"
+    )
+    sh("mkdir -p output && mv *.ipa output/")
+  end
+
 platform :ios do
   desc "Generate new localized screenshots"
   lane :screenshots do
