@@ -1,0 +1,17 @@
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.1.0/gems/sysrandom-1.0.5/ext/sysrandom
+/Users/yara/.rbenv/versions/3.1.4/bin/ruby -I /Users/yara/.rbenv/versions/3.1.4/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.1.0/gems/sysrandom-1.0.5/ext/sysrandom
+make DESTDIR\= sitearchdir\=./.gem.20250701-90354-cupna0 sitelibdir\=./.gem.20250701-90354-cupna0 clean
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.1.0/gems/sysrandom-1.0.5/ext/sysrandom
+make DESTDIR\= sitearchdir\=./.gem.20250701-90354-cupna0 sitelibdir\=./.gem.20250701-90354-cupna0
+compiling randombytes_sysrandom.c
+compiling sysrandom_ext.c
+linking shared-object sysrandom_ext.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.1'
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.1.0/gems/sysrandom-1.0.5/ext/sysrandom
+make DESTDIR\= sitearchdir\=./.gem.20250701-90354-cupna0 sitelibdir\=./.gem.20250701-90354-cupna0 install
+/usr/bin/install -c -m 0755 sysrandom_ext.bundle ./.gem.20250701-90354-cupna0

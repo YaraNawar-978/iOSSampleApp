@@ -1,0 +1,19 @@
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/sysrandom-1.0.5/ext/sysrandom
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/sysrandom-1.0.5/ext/sysrandom
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-4qw0e7 sitelibdir\=./.gem.20250701-57288-4qw0e7 clean
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/sysrandom-1.0.5/ext/sysrandom
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-4qw0e7 sitelibdir\=./.gem.20250701-57288-4qw0e7
+compiling randombytes_sysrandom.c
+compiling sysrandom_ext.c
+linking shared-object sysrandom_ext.bundle
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/sysrandom-1.0.5/ext/sysrandom
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-4qw0e7 sitelibdir\=./.gem.20250701-57288-4qw0e7 install
+/usr/bin/install -c -m 0755 sysrandom_ext.bundle ./.gem.20250701-57288-4qw0e7
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/sysrandom-1.0.5/ext/sysrandom
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-4qw0e7 sitelibdir\=./.gem.20250701-57288-4qw0e7 clean

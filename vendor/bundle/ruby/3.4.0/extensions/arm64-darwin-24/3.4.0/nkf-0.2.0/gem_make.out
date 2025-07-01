@@ -1,0 +1,18 @@
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-qsydwh sitelibdir\=./.gem.20250701-57288-qsydwh clean
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-qsydwh sitelibdir\=./.gem.20250701-57288-qsydwh
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-qsydwh sitelibdir\=./.gem.20250701-57288-qsydwh install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20250701-57288-qsydwh
+
+current directory: /Users/yara/iOSSampleApp/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250701-57288-qsydwh sitelibdir\=./.gem.20250701-57288-qsydwh clean
