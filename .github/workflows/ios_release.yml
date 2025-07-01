@@ -18,7 +18,8 @@ jobs:
           gem install bundler fastlane
 
       - run: |
-          fastlane dev_build
+          cd Sources/iOSSampleApp
+          bundle exec fastlane dev_build
         env:
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
 
