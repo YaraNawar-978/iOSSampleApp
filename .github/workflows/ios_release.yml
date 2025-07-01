@@ -7,10 +7,6 @@ jobs:
   build:
     runs-on: macos-latest
 
-    defaults:
-      run:
-        working-directory: Sources/iOSSampleApp
-
     steps:
       - name: 📦 Checkout code
         uses: actions/checkout@v4
@@ -34,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dev-build
-          path: Sources/iOSSampleApp/output/
+          path: output/
