@@ -8,23 +8,36 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v3
 
-      - uses: ruby/setup-ruby@v1
+      - name: 🧱 Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
 
-      - run: |
+      - name: 📦 Install Bundler and Fastlane system-wide
+        run: |
           gem install bundler fastlane
 
-      - run: |
+      - name: 🧩 Install Fastlane dependencies from Gemfile
+        run: |
+          cd Sources/iOSSampleApp
+          bundle install
+
+      - name: 🚀 Run Fastlane dev_build
+        run: |
           cd Sources/iOSSampleApp
           bundle exec fastlane dev_build
         env:
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
 
-      - name: Upload Build Artifact
+      - name: 🧾 Show contents of output folder
+        run: |
+          ls -la Sources/iOSSampleApp/output/
+
+      - name: 📦 Upload Build Artifact (.ipa)
         uses: actions/upload-artifact@v4
         with:
           name: dev-build
-          path: output/
+          path: Sources/iOSSampleApp/output/
